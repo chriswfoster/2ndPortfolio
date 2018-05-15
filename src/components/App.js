@@ -16,37 +16,37 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="App-header">
-        <Link
+        <ul className="App-header">
+        <li><Link
           to="/"
           className=""
           style={{ textDecoration: "none", color: "blue" }}
         >
           Home
-        </Link>
-        <Link
+        </Link></li>
+        <li><Link
           to="/projects"
           className=""
           style={{ textDecoration: "none", color: "blue" }}
         >
           My Projects
-        </Link>
-        <Link
+        </Link></li>
+        <li><Link
           to="/skillset"
           className=""
           style={{ textDecoration: "none", color: "blue" }}
         >
           Some of my Skillset
-        </Link>
-        <Link
+        </Link></li>
+        <li><Link
           to="/contact"
           className=""
           style={{ textDecoration: "none", color: "blue" }}
         >
           Contact
-        </Link>
+        </Link></li>
         
-      </div>
+      </ul>
 
 
       <div>
