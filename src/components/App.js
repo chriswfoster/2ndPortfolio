@@ -1,59 +1,76 @@
 import React, { Component } from 'react';
-import Home from './routedchildren/Home/Home'
-import Contact from './routedchildren/Contact/Contact'
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import router from '../router'
+import './App.css';
+import Contact from "./routedchildren/Contact/Contact"
+import { TransitionGroup, CSSTransition } from "react-transition-group"
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   Redirect
-} from "react-router-dom";
-import './App.css';
+} from "react-router-dom"
+import Home from './Home'
 
 class App extends Component {
   render() {
     return (
       <div>
-     <ul>
-     <Link
+        <div className="App-header">
+        <Link
           to="/"
           className=""
           style={{ textDecoration: "none", color: "blue" }}
         >
-          To Do List
+          Home
+        </Link>
+        <Link
+          to="/projects"
+          className=""
+          style={{ textDecoration: "none", color: "blue" }}
+        >
+          My Projects
+        </Link>
+        <Link
+          to="/skillset"
+          className=""
+          style={{ textDecoration: "none", color: "blue" }}
+        >
+          Some of my Skillset
         </Link>
         <Link
           to="/contact"
           className=""
           style={{ textDecoration: "none", color: "blue" }}
         >
-          Grocery List
+          Contact
         </Link>
-       </ul>
+        
+      </div>
 
 
       <div>
       <Switch>
           <Route
-            path="/"
-            render={() => (
-              <Home
-                />
-            )}
-          />
-          <Route
             path="/contact"
             render={() => (
               <Contact
+              
+              />
+            )}
+          />
+          <Route
+            path="/"
+            render={() => (
+              <Home
+                
               />
             )}
           />
         </Switch>
         </div>
-       
+        </div>
 
-      </div>
     );
   }
 }
