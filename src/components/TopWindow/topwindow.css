@@ -1,0 +1,41 @@
+.window {
+  height: 100vh;
+  width: 100%;
+
+  position: relative;
+  display: block;
+  z-index: 33;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+.topname {
+  font-size: 88px;
+  margin-bottom: -3%;
+}
+.window img {
+  margin-top: 5%;
+  max-width: 100px;
+  border-radius: 553px;
+}
+.window img:hover {
+  background-color: rgba(59, 154, 218, 0.253);
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.274);
+}
+
+.statsDisplayFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  text-align: center;
+  bottom: 0%;
+  width: 100vw;
+}

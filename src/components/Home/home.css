@@ -1,0 +1,60 @@
+.backgroundimage {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("backgroundimage.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  z-index: -3;
+  overflow: hidden;
+}
+.navbarbox {
+  width: 100vw;
+  height: 12vh;
+  background-color: rgba(0, 0, 0, 0.637);
+  float: top;
+  position: absolute;
+  z-index: 55;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+.navbarbox img {
+  max-height: 17vh;
+  left: 0vw;
+  margin-top: 2vh;
+}
+.navflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+.navflex div {
+  margin-right: 3vw;
+  cursor: pointer;
+  font-size: 100%;
+}
+.navflex div:hover {
+  color: blue;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .backgroundimage {
+    background-image: none;
+    background-color: rgb(39, 39, 39);
+  }
+}
+@media screen and (max-width: 555px) {
+  .navflex div {
+    font-size: 50%;
+  }
+}
