@@ -38,30 +38,30 @@
   background-color: #f0f0f0;
   height: 15vh;
   width: 80vw;
-
-  color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   align-content: stretch;
-  list-style-type: none;
+
 }
-.App-header li {
+.App-header link {
   padding-right: 6vw;
   padding-left: 5vw;
   height: 100%;
-  border-right: solid white 1px;
+  border-right: solid black 1px;
+  margin-bottom: 0vh;
 }
 
 .App-leftbar {
   background-color: #555b75;
   color: #999999;
-  width: 40vw;
-  height: 75vh;
+  width: 30vw;
+  height: 80vh;
 }
 .App-bottomboxes {
+  margin-top: 0vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
