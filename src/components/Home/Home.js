@@ -7,7 +7,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom"
-
+import './home.css'
 
 class Home extends Component {
   constructor() {
@@ -23,7 +23,7 @@ class Home extends Component {
 
 
     return (
-     <p>test</p>
+     <div className="home-main">test</div>
     )
   }
 }
