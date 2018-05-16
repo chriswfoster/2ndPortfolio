@@ -56,7 +56,7 @@ class App extends Component {
             <div className="App-leftbar">
               <p> CHRIS FOSTER </p>
               <ul>
-                <li>Test1</li>
+                <li>Full-stack web developer</li>
                 <li>Test2</li>
                 <li>Test3</li>
               </ul>
