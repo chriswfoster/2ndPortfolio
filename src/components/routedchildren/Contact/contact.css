@@ -1,0 +1,94 @@
+.contact-topbar {
+  background-color: #01b5b6;
+  height: 8vh;
+}
+
+.contact-main {
+  width: 50vw;
+  height: 80vh;
+  background-color: white;
+  overflow-x: scroll;
+}
+
+.contact-inputorganization {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  width: 50vw;
+  margin-top: 3vh;
+}
+
+.contact-inputorganization input {
+  height: 4vh;
+  width: 30%;
+  border-radius: 20px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(189, 189, 189);
+  font-size: 1.5rem;
+  padding-left: 1vw;
+}
+
+.contact-inputorganization input::placeholder {
+  color: rgb(189, 189, 189);
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(189, 189, 189);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(189, 189, 189);
+}
+
+.contact-textarea {
+  height: 80%;
+  width: 80%;
+  border-radius: 20px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(189, 189, 189);
+  font-size: 1.5rem;
+  padding-left: 1vw;
+  margin-top: 2vh;
+  resize: none;
+}
+
+.contact-textarea::placeholder {
+  color: rgb(189, 189, 189);
+}
+:-ms-textarea-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(189, 189, 189);
+}
+
+::-ms-textarea-placeholder {
+  /* Microsoft Edge */
+  color: rgb(189, 189, 189);
+}
+
+.contact-FormFlex {
+  margin-top: 0px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+.contact-sendbutton {
+  width: 20%;
+  margin-top: 2vh;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #01b5b6;
+  border-radius: 20px;
+  height: 5vh;
+  font-size: 1rem;
+}

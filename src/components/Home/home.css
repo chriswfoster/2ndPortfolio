@@ -3,4 +3,23 @@
   color: white;
   width: 50vw;
   height: 80vh;
+
+ 
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+.home-textcontainer{
+    margin-left: 3vw;
+}
+
+.home-main img {
+    max-width: 40%;
+margin-right: 3vw;
+    border: white 1vh solid;
 }
