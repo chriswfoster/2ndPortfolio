@@ -26,6 +26,7 @@ class Contact extends Component {
       <div className="contact-main">
         <div className="contact-topbar">
           <p> CONTACT </p>
+          <p> Wanna talk to me? </p>
         </div>
         <MyMapComponent
           isMarkerShown

@@ -1,6 +1,13 @@
 .contact-topbar {
   background-color: #01b5b6;
   height: 8vh;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
 }
 
 .contact-main {
@@ -8,6 +15,7 @@
   height: 80vh;
   background-color: white;
   overflow-x: scroll;
+
 }
 
 .contact-inputorganization {
