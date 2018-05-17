@@ -7,7 +7,19 @@ class Projects extends Component {
           <p> PORTFOLIO. </p>
           <p> Some of my recent projects </p>
         </div>
-    <div>
+        <div className="projecttilesflex" >
+        <a
+              href="https://www.youtube.com/watch?v=xsKCZNNVW8o&feature=youtu.be"
+              style={{ textDecoration: "none" }}
+              className="projectlinks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={require("./QueueScreenshot.png")}
+                className="projectpictiles" alt="imgz"
+              />
+            </a>
     <a
               href="http://dream.chriswf.com"
               style={{ textDecoration: "none" }}
@@ -19,7 +31,6 @@ class Projects extends Component {
                 src={require("./DreamScreenshot.png")}
                 className="projectpictiles" alt="imgz"
               />
-              <h2>Dream Notes</h2>
             </a>
             <a
               href="http://reactgiphy.chriswf.com"
@@ -32,21 +43,8 @@ class Projects extends Component {
                 src={require("./GiphyScreenshot.png")}
                 className="projectpictiles" alt="imgz"
               />
-              <h2>Giphy Search Tool (React Variant)</h2>
             </a>
-            <a
-              href="https://www.youtube.com/watch?v=xsKCZNNVW8o&feature=youtu.be"
-              style={{ textDecoration: "none" }}
-              className="projectlinks"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={require("./QueueScreenshot.png")}
-                className="projectpictiles" alt="imgz"
-              />
-                 <h2>Student Help Queue</h2>
-            </a>
+            
       </div>
 
     </div>

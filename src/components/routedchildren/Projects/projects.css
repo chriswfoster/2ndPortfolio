@@ -1,0 +1,28 @@
+.projectpictiles {
+  width: 100%;
+  height: 25vh;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+}
+.projectpictiles:hover {
+  border-style: solid;
+  border-color: rgb(25, 0, 255);
+}
+.projecttilesflex {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  overflow-x: hidden;
+  width: 100%;
+}
+.projectlinks {
+  width: 49%;
+  color: white;
+}
+.projectlinks:hover {
+  color: blue;
+}
