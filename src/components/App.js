@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import router from "../router"
 import "./App.css"
 import Contact from "./routedchildren/Contact/Contact"
-import Projects from './routedchildren/Projects/Projects'
-import Skillset from './routedchildren/Skillset/Skillset'
+import Projects from "./routedchildren/Projects/Projects"
+import Skillset from "./routedchildren/Skillset/Skillset"
 import { TransitionGroup, CSSTransition } from "react-transition-group"
 import {
   BrowserRouter as Router,
@@ -60,6 +60,31 @@ class App extends Component {
                 <li>E-bike enthusiast</li>
                 <li>Happy father</li>
               </ul>
+              <div>
+                <a
+                  href="https://github.com/chriswfoster"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="fa-github"
+                    src={require("./routedchildren/Contact/github-icon.png")}
+                    alt="imgz"
+                  />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/chriswfoster/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("./routedchildren/Contact/linkedin-icon.png")}
+                    className="fa-linkedin"
+                    alt="imgz"
+                  />
+                </a>
+              </div>
             </div>
 
             <div>
