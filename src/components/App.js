@@ -57,8 +57,8 @@ class App extends Component {
               <p> CHRIS FOSTER </p>
               <ul>
                 <li>Full-stack web developer</li>
-                <li>Test2</li>
-                <li>Test3</li>
+                <li>E-bike enthusiast</li>
+                <li>Happy father</li>
               </ul>
             </div>
 
