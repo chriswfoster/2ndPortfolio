@@ -6,7 +6,7 @@
 }
 .projectpictiles:hover {
   border-style: solid;
-  border-color: rgb(25, 0, 255);
+  border-color: white;
 }
 .projecttilesflex {
   display: flex;
@@ -24,5 +24,5 @@
   color: white;
 }
 .projectlinks:hover {
-  color: blue;
+  color: white;
 }
