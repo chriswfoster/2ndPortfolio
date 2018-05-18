@@ -1,12 +1,12 @@
 import React, { Component } from "react"
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom"
 import "./skillset.css"
 
 class Skillset extends Component {
   render() {
     return (
-      <div className="contact-main">
-        <div className="contact-topbar">
+      <div className="contact-main" style={{ backgroundColor: "#01b5b6" }}>
+        <div className="contact-topbar" style={{ borderBottom: "solid white" }}>
           <p>SKILLSET</p>
           <p>Some of the skills and tech that I have knowledge in.</p>
         </div>
@@ -70,7 +70,6 @@ class Skillset extends Component {
             <p>Node.js</p>
           </div>
           <div>
-            {" "}
             <img src={require("./icons/postgresql-icon.png")} alt="imgz" />
             <p>PostgreSQL</p>
           </div>
@@ -92,14 +91,12 @@ class Skillset extends Component {
           </div>
         </div>
 
-
-          <p className="skillset-including">
-            Also including profiency in Linux/Unix, Mac, and MS Windows
-            Operating Systems (Server distributions as well). I have a
-            background in IT with some system adminstration experience. You're
-            absolute free to <Link to="/contact">reach out to me for more details!</Link>
-          </p>
-
+        <p className="skillset-including">
+          I also have profiency in Linux/Unix, Mac, and MS Windows Operating
+          Systems (Server distributions as well). I have a background in IT with
+          some system adminstration experience. You're absolute free to{" "}
+          <Link to="/contact">reach out to me for more details!</Link>
+        </p>
       </div>
     )
   }

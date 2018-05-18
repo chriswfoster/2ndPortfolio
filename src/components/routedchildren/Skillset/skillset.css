@@ -6,12 +6,13 @@
   align-items: center;
   align-content: stretch;
   margin-bottom: 50px;
+  background-color: #01b5b6
 }
 .iconrowflex div {
   margin-right: 2vh;
   margin-left: 2vh;
   margin-top: 2vh;
-  border: dotted black;
+  border: dotted white;
   padding: 1vh;
   text-align: center;
 }
@@ -26,6 +27,8 @@
 
 .skillset-including {
   text-align: center;
-  width: 100%;
-  border: dotted black;
+  width: 95%;
+  border: dotted white;
+    margin-left: 2.5%;
+    padding: 1vh;
 }

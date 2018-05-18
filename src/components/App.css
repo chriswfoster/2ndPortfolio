@@ -69,3 +69,12 @@
   align-items: stretch;
   align-content: stretch;
 }
+
+
+.switch-wrapper {
+  position: relative;
+}
+ 
+.switch-wrapper > div {
+  position: absolute;
+}

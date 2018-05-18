@@ -4,7 +4,7 @@ import "./App.css"
 import Contact from "./routedchildren/Contact/Contact"
 import Projects from "./routedchildren/Projects/Projects"
 import Skillset from "./routedchildren/Skillset/Skillset"
-import { TransitionGroup, CSSTransition } from "react-transition-group"
+import { AnimatedSwitch, spring } from 'react-router-transition'
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,9 +12,45 @@ import {
   Link,
   Redirect
 } from "react-router-dom"
-import Home from "./Home/Home"
+import Home from "./routedchildren/Home/Home"
 
 class App extends Component {
+
+// we need to map the `scale` prop we define below
+// to the transform style property
+mapStyles(styles) {
+  return {
+    opacity: styles.opacity,
+    transform: `scale(${styles.scale})`,
+  };
+}
+
+// wrap the `spring` helper to use a bouncy config
+bounce(val) {
+  return spring(val, {
+    stiffness: 330,
+    damping: 22,
+  });
+}
+
+bounceTransition = {
+  // start in a transparent, upscaled state
+  atEnter: {
+    opacity: 0,
+    scale: 1.2,
+  },
+  // leave in a transparent, downscaled state
+  atLeave: {
+    opacity: this.bounce(0),
+    scale: this.bounce(0.8),
+  },
+  // and rest at an opaque, normally-scaled state
+  atActive: {
+    opacity: this.bounce(1),
+    scale: this.bounce(1),
+  },
+};
+
   render() {
     return (
       <div className="App-mainbackground">
@@ -57,8 +93,8 @@ class App extends Component {
               <p> CHRIS FOSTER </p>
               <ul>
                 <li>Full-stack web developer</li>
-                <li>E-bike enthusiast</li>
-                <li>Happy father</li>
+                <li>E-bike and avid car enthusiast</li>
+                <li>Proud father</li>
               </ul>
               <div>
                 <a
@@ -88,12 +124,18 @@ class App extends Component {
             </div>
 
             <div>
-              <Switch>
+              <AnimatedSwitch
+      atEnter={this.bounceTransition.atEnter}
+      atLeave={this.bounceTransition.atLeave}
+      atActive={this.bounceTransition.atActive}
+      mapStyles={this.mapStyles}
+      className="switch-wrapper"
+    >
                 <Route path="/contact" render={() => <Contact />} />
                 <Route path="/projects" render={() => <Projects />} />
                 <Route path="/skillset" render={() => <Skillset />} />
                 <Route path="/" render={() => <Home />} />
-              </Switch>
+              </AnimatedSwitch>
             </div>
           </div>
         </div>
@@ -101,5 +143,7 @@ class App extends Component {
     )
   }
 }
+
+
 
 export default App
