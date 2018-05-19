@@ -83,4 +83,8 @@
 
 .font-righteous{
   font-family: "Righteous", sans-serif;
+  letter-spacing: 1px;
 }
+ ul {
+  list-style-type: none;
+ }

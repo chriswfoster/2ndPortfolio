@@ -53,7 +53,7 @@ bounceTransition = {
 
   render() {
     return (
-      <div className="App-mainbackground">
+      <div className="App-mainbackground font-righteous">
         <div className="App-maincontainer">
           <div className="App-header">
             <Link
@@ -90,7 +90,7 @@ bounceTransition = {
           </div>
           <div className="App-bottomboxes">
             <div className="App-leftbar">
-              <p className="font-righteous"> CHRIS FOSTER </p>
+              <p> CHRIS FOSTER </p>
               <ul>
                 <li>Full-stack web developer</li>
                 <li>E-bike and avid car enthusiast</li>
