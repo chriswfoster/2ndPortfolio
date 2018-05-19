@@ -78,3 +78,9 @@
 .switch-wrapper > div {
   position: absolute;
 }
+
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+
+.font-righteous{
+  font-family: "Righteous", sans-serif;
+}
