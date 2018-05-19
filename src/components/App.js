@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import router from "../router"
+import Header from './Header'
+import LeftBar from './LeftBar'
 import Contact from "./routedchildren/Contact/Contact"
 import Projects from "./routedchildren/Projects/Projects"
 import Skillset from "./routedchildren/Skillset/Skillset"
@@ -56,77 +58,9 @@ class App extends Component {
     return (
       <div className="App-mainbackground font-righteous">
         <div className="App-maincontainer">
-          <div className="App-header">
-            <Link
-              to="/"
-              className="list-group-item nav-icon-organizer"
-              style={{ textDecoration: "none", color: "#999999" }}
-            >
-              <i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i>
-              HOME
-            </Link>
-           
-            <Link
-              to="/projects"
-              className="list-group-item nav-icon-organizer"
-              style={{ textDecoration: "none", color: "#999999" }}
-            >
-            <i className=" fa fa-list-alt fa-fw fa-2x" aria-hidden="true"></i>
-              MY PROJECTS
-            </Link>
-
-            <Link
-              to="/skillset"
-              className=" nav-icon-organizer"
-              style={{ textDecoration: "none", color: "#999999" }}
-            >
-            <i className="fa fa-gears fa-fw fa-2x" aria-hidden="true"></i>
-              SOME OF MY SKILLSET
-            </Link>
-
-            <Link
-              to="/contact"
-              className="list-group-item nav-icon-organizer"
-              style={{ textDecoration: "none", color: "#999999" }}
-            >
-            <i className="fa fa-envelope-o fa-fw fa-2x" aria-hidden="true"></i>
-              CONTACT
-            </Link>
-          </div>
+          <Header />
           <div className="App-bottomboxes">
-            <div className="App-leftbar">
-              <p> CHRIS FOSTER </p>
-              <ul>
-                <li>full-stack web developer</li>
-                <li>e-bike and avid car enthusiast</li>
-                <li>proud father</li>
-              </ul>
-              <div>
-                <a
-                  href="https://github.com/chriswfoster"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="fa-github"
-                    src={require("./routedchildren/Contact/github-icon.png")}
-                    alt="imgz"
-                  />
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/chriswfoster/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={require("./routedchildren/Contact/linkedin-icon.png")}
-                    className="fa-linkedin"
-                    alt="imgz"
-                  />
-                </a>
-              </div>
-            </div>
+            <LeftBar />
 
             <div>
               <AnimatedSwitch
