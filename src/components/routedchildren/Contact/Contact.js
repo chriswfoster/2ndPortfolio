@@ -24,7 +24,7 @@ class Contact extends Component {
     )
     return (
       <div className="contact-main">
-        <div className="contact-topbar">
+        <div className="contact-topbar font-righteous">
           <p> CONTACT </p>
           <p> Wanna talk to me? </p>
         </div>

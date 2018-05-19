@@ -4,7 +4,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="contact-main" style={{ backgroundColor: "#01b5b6" }}>
-        <div className="contact-topbar" style={{ borderBottom: "solid white" }}>
+        <div className="contact-topbar font-righteous" style={{ borderBottom: "solid white" }}>
           <p> PORTFOLIO. </p>
           <p> Some of my recent projects </p>
         </div>

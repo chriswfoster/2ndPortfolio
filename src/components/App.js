@@ -90,7 +90,7 @@ bounceTransition = {
           </div>
           <div className="App-bottomboxes">
             <div className="App-leftbar">
-              <p> CHRIS FOSTER </p>
+              <p className="font-righteous"> CHRIS FOSTER </p>
               <ul>
                 <li>Full-stack web developer</li>
                 <li>E-bike and avid car enthusiast</li>

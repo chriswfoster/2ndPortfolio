@@ -6,7 +6,7 @@ class Skillset extends Component {
   render() {
     return (
       <div className="contact-main" style={{ backgroundColor: "#01b5b6" }}>
-        <div className="contact-topbar" style={{ borderBottom: "solid white" }}>
+        <div className="contact-topbar font-righteous" style={{ borderBottom: "solid white" }}>
           <p>SKILLSET</p>
           <p>Some of the skills and tech that I have knowledge in.</p>
         </div>
