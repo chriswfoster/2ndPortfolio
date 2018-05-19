@@ -59,33 +59,37 @@ class App extends Component {
           <div className="App-header">
             <Link
               to="/"
-              className=""
-              style={{ textDecoration: "none", color: "blue" }}
+              className="list-group-item nav-icon-organizer"
+              style={{ textDecoration: "none", color: "#999999" }}
             >
+              <i class="fa fa-home fa-fw" aria-hidden="true"></i>
               Home
             </Link>
-
+           
             <Link
               to="/projects"
-              className=""
-              style={{ textDecoration: "none", color: "blue" }}
+              className="list-group-item nav-icon-organizer"
+              style={{ textDecoration: "none", color: "#999999" }}
             >
+            <i className=" fa fa-list-alt fa-fw" aria-hidden="true"></i>
               My Projects
             </Link>
 
             <Link
               to="/skillset"
-              className=""
-              style={{ textDecoration: "none", color: "blue" }}
+              className=" nav-icon-organizer"
+              style={{ textDecoration: "none", color: "#999999" }}
             >
+            <i className="fa fa-gears fa-fw" aria-hidden="true"></i>
               Some of my Skillset
             </Link>
 
             <Link
               to="/contact"
-              className=""
-              style={{ textDecoration: "none", color: "blue" }}
+              className="list-group-item nav-icon-organizer"
+              style={{ textDecoration: "none", color: "#999999" }}
             >
+            <i className="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
               Contact
             </Link>
           </div>
