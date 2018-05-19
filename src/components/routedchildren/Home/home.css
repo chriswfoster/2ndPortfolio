@@ -3,9 +3,6 @@
   color: white;
   width: 50vw;
   height: 70vh;
-
- 
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -20,6 +17,6 @@
 
 .home-main img {
     max-width: 40%;
-margin-right: 3vw;
+    margin-right: 3vw;
     border: white 1vh solid;
 }
