@@ -62,8 +62,8 @@ class App extends Component {
               className="list-group-item nav-icon-organizer"
               style={{ textDecoration: "none", color: "#999999" }}
             >
-              <i class="fa fa-home fa-fw" aria-hidden="true"></i>
-              Home
+              <i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i>
+              HOME
             </Link>
            
             <Link
@@ -71,8 +71,8 @@ class App extends Component {
               className="list-group-item nav-icon-organizer"
               style={{ textDecoration: "none", color: "#999999" }}
             >
-            <i className=" fa fa-list-alt fa-fw" aria-hidden="true"></i>
-              My Projects
+            <i className=" fa fa-list-alt fa-fw fa-2x" aria-hidden="true"></i>
+              MY PROJECTS
             </Link>
 
             <Link
@@ -80,8 +80,8 @@ class App extends Component {
               className=" nav-icon-organizer"
               style={{ textDecoration: "none", color: "#999999" }}
             >
-            <i className="fa fa-gears fa-fw" aria-hidden="true"></i>
-              Some of my Skillset
+            <i className="fa fa-gears fa-fw fa-2x" aria-hidden="true"></i>
+              SOME OF MY SKILLSET
             </Link>
 
             <Link
@@ -89,8 +89,8 @@ class App extends Component {
               className="list-group-item nav-icon-organizer"
               style={{ textDecoration: "none", color: "#999999" }}
             >
-            <i className="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
-              Contact
+            <i className="fa fa-envelope-o fa-fw fa-2x" aria-hidden="true"></i>
+              CONTACT
             </Link>
           </div>
           <div className="App-bottomboxes">
