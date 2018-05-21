@@ -25,7 +25,11 @@ class App extends Component {
       topleft: null,
       topright: null,
       bottomleft: null,
-      bottomright: null
+      bottomright: null,
+      topleftinsert: false,
+      toprightinsert: false,
+      bottomleftinsert: false,
+      bottomrightinsert: false
     }
   }
 
@@ -59,23 +63,41 @@ class App extends Component {
     })
   }
 
+  insertHandler = tile => {
+    this.setState({ [tile]: true })
+  }
+
   render() {
     return (
       <div className="App-main">
-        <AboutmeTile expand={this.expand} leave={this.leave} size={this.size} />
-
+        <AboutmeTile
+          expand={this.expand}
+          leave={this.leave}
+          size={this.size}
+          insert={this.state.topleftinsert}
+          insertHandler={this.insertHandler}
+        />
         <ProjectsTile
           expand={this.expand}
           leave={this.leave}
           size={this.size}
+          insert={this.state.toprightinsert}
+          insertHandler={this.insertHandler}
         />
-
         <SkillsetTile
           expand={this.expand}
           leave={this.leave}
           size={this.size}
+          insert={this.state.bottomleftinsert}
+          insertHandler={this.insertHandler}
         />
-        <ContactTile expand={this.expand} leave={this.leave} size={this.size} />
+        <ContactTile
+          expand={this.expand}
+          leave={this.leave}
+          size={this.size}
+          insert={this.state.bottomrightinsert}
+          insertHandler={this.insertHandler}
+        />
         <p className="App-firstname font-righteous">CHRIS</p>
         <p className="App-lastname font-righteous">FOSTER</p>
 
