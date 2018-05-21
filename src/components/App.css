@@ -10,7 +10,7 @@
   background-image: url("./images/sondors-white.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  animation: aboutme-in 0.5s ease-out;
+  animation: aboutme-in 750ms ease-in-out;
   position: absolute;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
@@ -23,7 +23,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
-  animation: projects-in 0.5s ease-out;
+  animation: projects-in 750ms ease-in-out;
   top: 0vh;
   right: 0vh;
   border-left: 2px solid black;
@@ -36,7 +36,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
-  animation: skillset-in 0.5s ease-out;
+  animation: skillset-in 750ms ease-in-out;
   border-right: 2px solid black;
   border-top: 2px solid black;
   border-radius: 0 12px 0 0;
@@ -47,7 +47,7 @@
   background-image: url("./images/mail-icon.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  animation: contact-in 0.5s ease-out;
+  animation: contact-in 750ms ease-in-out;
   border-left: 2px solid black;
   border-top: 2px solid black;
   border-radius: 12px 0 0 0;
@@ -60,7 +60,32 @@
   width: 45vw;
   height: 45vh;
   background-color: white;
+  transition: 750ms all ease-in-out;
 }
+.App-innertile {
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+.App-innertile p {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+  color: white;
+}
+.App-innertile:hover {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+
+
+
+
 
 .App-firstname {
   position: absolute;
