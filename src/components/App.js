@@ -1,11 +1,11 @@
 import React, { Component } from "react"
 import router from "../router"
-import Header from "./Header"
-import LeftBar from "./LeftBar"
-import Contact from "./routedchildren/Contact/Contact"
-import Projects from "./routedchildren/Projects/Projects"
-import Skillset from "./routedchildren/Skillset/Skillset"
-import Home from "./routedchildren/Home/Home"
+
+import AboutmeTile from "./four-main-tiles/AboutmeTile"
+import ContactTile from "./four-main-tiles/ContactTile"
+import ProjectsTile from "./four-main-tiles/ProjectsTile"
+import SkillsetTile from "./four-main-tiles/SkillsetTile"
+
 import { AnimatedSwitch, spring } from "react-router-transition"
 import {
   BrowserRouter as Router,
@@ -29,7 +29,7 @@ class App extends Component {
     }
   }
 
-  leave() {
+  leave = () => {
     this.setState({
       topleft: null,
       topright: null,
@@ -38,7 +38,7 @@ class App extends Component {
     })
   }
 
-  expand(side, side2, side3, side4) {
+  expand = (side, side2, side3, side4) => {
     if (this.state[side] === side) {
       return { width: "85vw", height: "85vh", zIndex: "3" }
     } else if (
@@ -50,7 +50,7 @@ class App extends Component {
     }
     return { width: "45vw", height: "45vh" }
   }
-  size(first, second, third, fourth) {
+  size = (first, second, third, fourth) => {
     this.setState({
       [first]: first,
       [second]: first,
@@ -62,84 +62,29 @@ class App extends Component {
   render() {
     return (
       <div className="App-main">
+        <AboutmeTile expand={this.expand} leave={this.leave} size={this.size} />
 
+        <ProjectsTile
+          expand={this.expand}
+          leave={this.leave}
+          size={this.size}
+        />
+
+        <SkillsetTile
+          expand={this.expand}
+          leave={this.leave}
+          size={this.size}
+        />
+        <ContactTile expand={this.expand} leave={this.leave} size={this.size} />
         <p className="App-firstname font-righteous">CHRIS</p>
         <p className="App-lastname font-righteous">FOSTER</p>
-        <div
-          className="App-aboutme App-tilesize "
-          style={this.expand(
-            "topleft",
-            "topright",
-            "bottomleft",
-            "bottomright"
-          )}
-          onMouseEnter={() =>
-            this.size("topleft", "topright", "bottomleft", "bottomright")
-          }
-          onMouseLeave={() => this.leave()}
-        >
-          <div className="App-innertile">
-            <p>About Me</p>
-          </div>
-        </div>
-        <div
-          className="App-projects App-tilesize "
-          style={this.expand(
-            "topright",
-            "topleft",
-            "bottomleft",
-            "bottomright"
-          )}
-          onMouseEnter={() =>
-            this.size("topright", "topleft", "bottomleft", "bottomright")
-          }
-          onMouseLeave={() => this.leave()}
-        >
-          <div className="App-innertile">
-            <p>Projects</p>
-          </div>
-        </div>
-        <div
-          className="App-skillset App-tilesize "
-          style={this.expand(
-            "bottomleft",
-            "bottomright",
-            "topleft",
-            "topright"
-          )}
-          onMouseEnter={() =>
-            this.size("bottomleft", "bottomright", "topleft", "topright")
-          }
-          onMouseLeave={() => this.leave()}
-        >
-          <div className="App-innertile">
-            <p>Skillset</p>
-          </div>
-        </div>
-        <div
-          className="App-contact App-tilesize "
-          style={this.expand(
-            "bottomright",
-            "bottomleft",
-            "topright",
-            "topleft"
-          )}
-          onMouseEnter={() =>
-            this.size("bottomright", "bottomleft", "topright", "topleft")
-          }
-          onMouseLeave={() => this.leave()}
-        >
-          <div className="App-innertile">
-            <p>Contact</p>
-          </div>
-        </div>
+
         <p className="App-fullstack font-righteous App-vertialtext">
           FULL STACK
         </p>
         <p className="App-webdeveloper font-righteous App-vertialtext">
           WEB DEVELOPER
         </p>
-        
       </div>
     )
   }
