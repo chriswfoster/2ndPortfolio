@@ -6,6 +6,7 @@ class Header extends Component {
 
 
 render() {
+    console.log(window)
 return(
 <div className="App-header">
 <Link
@@ -13,7 +14,7 @@ return(
   className="list-group-item nav-icon-organizer"
   style={{ textDecoration: "none", color: "#999999" }}
 >
-  <i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i>
+  <div style={{border: "solid 2px blue", borderRadius: "50%"}}><i className="fa fa-home fa-fw fa-2x" aria-hidden="true"></i></div>
   HOME
 </Link>
 
