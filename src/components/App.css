@@ -3,7 +3,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background-color: lightblue;
+  background-color: black;
 }
 
 .App-aboutme {
@@ -15,6 +15,8 @@
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   border-radius: 0 0 12px 0;
+  top: 0vh;
+  left: 0vh;
 }
 .App-projects {
   background-image: url("./images/projects.jpg");
@@ -60,7 +62,41 @@
   background-color: white;
 }
 
+.App-firstname {
+  position: absolute;
+  top: 37vh;
+  left: 15vw;
+  font-size: 8vh;
+}
+.App-lastname {
+  position: absolute;
+  top: 37vh;
+  right: 15vw;
+  font-size: 8vh;
+}
+.App-fullstack {
+  left: 49.5vw;
+  top: 0vw;
+  position: absolute;
+}
+.App-webdeveloper {
+  left: 49.5vw;
+  bottom: 0vw;
+  position: absolute;
+}
+.App-vertialtext {
+  width: 1px;
+  font-size: 2.5vh;
+  word-wrap: break-word;
+}
 
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+
+.font-righteous {
+  font-family: "Righteous", sans-serif;
+  letter-spacing: 3px;
+  color: white;
+}
 
 @keyframes aboutme-in {
   0% {
@@ -70,8 +106,8 @@
   }
   80% {
     border-radius: 0 0 0px 0;
-    width: 50vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vh;
   }
   100% {
     border-radius: 12px;
@@ -89,8 +125,8 @@
   }
   80% {
     border-radius: 0 0 0px 0;
-    width: 50vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vh;
   }
   100% {
     border-radius: 12px;
@@ -109,8 +145,8 @@
   }
   80% {
     border-radius: 0 0px 0 0;
-    width: 50vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vh;
   }
   100% {
     border-radius: 0 12px 0 0;
@@ -128,8 +164,8 @@
   }
   80% {
     border-radius: 0 0px 0 0;
-    width: 50vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vh;
   }
   100% {
     border-radius: 0 12px 0 0;
@@ -148,8 +184,8 @@
   }
   80% {
     border-radius: 0 0 0 0px;
-    width: 50vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vh;
   }
   100% {
     border-radius: 0 0 0 12px;
@@ -167,8 +203,8 @@
   }
   80% {
     border-radius: 0 0 0 0px;
-    width: 50vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vh;
   }
   100% {
     border-radius: 0 0 0 12px;
@@ -186,8 +222,8 @@
     border-radius: 555px 0 0 0;
   }
   80% {
-    width: 50vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vh;
     border-radius: 0px 0 0 0;
   }
   100% {
@@ -205,8 +241,8 @@
     border-radius: 555px 0 0 0;
   }
   80% {
-    width: 50vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vh;
     border-radius: 0px 0 0 0;
   }
   100% {

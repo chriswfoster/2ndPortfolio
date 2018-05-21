@@ -57,10 +57,18 @@ class App extends Component {
   render() {
     return (
       <div className="App-main">
-        <div className="App-aboutme App-tilesize test"> About Me </div>
-        <div className="App-projects App-tilesize test"> Projects </div>
-        <div className="App-skillset App-tilesize test"> Skillset </div>
-        <div className="App-contact App-tilesize test"> Contact </div>
+        <p className="App-firstname font-righteous">CHRIS</p>
+        <p className="App-lastname font-righteous">FOSTER</p>
+        <div className="App-aboutme App-tilesize "> About Me </div>
+        <div className="App-projects App-tilesize "> Projects </div>
+        <div className="App-skillset App-tilesize "> Skillset </div>
+        <div className="App-contact App-tilesize "> Contact </div>
+        <p className="App-fullstack font-righteous App-vertialtext">
+          FULL STACK
+        </p>
+        <p className="App-webdeveloper font-righteous App-vertialtext">
+          WEB DEVELOPER
+        </p>
       </div>
     )
   }
