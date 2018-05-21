@@ -16,7 +16,6 @@
   justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
-
 }
 .App-header link {
   padding-right: 6vw;
@@ -42,34 +41,53 @@
   align-content: stretch;
 }
 
-
 .switch-wrapper {
   position: relative;
 }
- 
+
 .switch-wrapper > div {
   position: absolute;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Righteous");
 
-.font-righteous{
+.font-righteous {
   font-family: "Righteous", sans-serif;
   letter-spacing: 1px;
 }
-.title-font{
-font-size: 2rem;
+.title-font {
+  font-size: 2rem;
 }
 
- ul {
+ul {
   list-style-type: none;
- }
+}
 
- .nav-icon-organizer{
+.nav-icon-organizer {
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
- }
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+
+
+.header-bordermaker {
+
+  border: solid 2px #555b75;
+  background-color: #555b75;
+  border-radius: 50%;
+  padding: 0vw;
+  transition-property: padding;
+  transition-duration: .1s;
+  transition-timing-function: linear;
+margin-right: -.5vw;
+margin-left: -.5vw;
+  padding: 1vw;
+
+}
+Link p {
+align-content: center;
+}

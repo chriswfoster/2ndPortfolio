@@ -14,8 +14,8 @@ return(
   className="list-group-item nav-icon-organizer"
   style={{ textDecoration: "none", color: "#999999" }}
 >
-  <div style={{border: "solid 2px blue", borderRadius: "50%"}}><i className="fa fa-home fa-fw fa-2x" aria-hidden="true"></i></div>
-  HOME
+  <div className = { window.location.pathname === "/" ? "header-bordermaker": null}><i className="fa fa-home fa-fw fa-2x" aria-hidden="true"></i></div>
+  <p>HOME</p>
 </Link>
 
 <Link
@@ -23,8 +23,8 @@ return(
   className="list-group-item nav-icon-organizer"
   style={{ textDecoration: "none", color: "#999999" }}
 >
-<i className=" fa fa-list-alt fa-fw fa-2x" aria-hidden="true"></i>
-  MY PROJECTS
+<div className = { window.location.pathname === "/projects" ? "header-bordermaker": null}><i className=" fa fa-list-alt fa-fw fa-2x" aria-hidden="true"></i></div>
+  <p>MY PROJECTS</p>
 </Link>
 
 <Link
@@ -32,8 +32,9 @@ return(
   className=" nav-icon-organizer"
   style={{ textDecoration: "none", color: "#999999" }}
 >
-<i className="fa fa-gears fa-fw fa-2x" aria-hidden="true"></i>
-  SOME OF MY SKILLSET
+<div className = { window.location.pathname === "/skillset" ? "header-bordermaker": null}>
+<i className="fa fa-gears fa-fw fa-2x" aria-hidden="true"></i></div>
+  <p>SOME OF MY SKILLSET</p>
 </Link>
 
 <Link
@@ -41,8 +42,9 @@ return(
   className="list-group-item nav-icon-organizer"
   style={{ textDecoration: "none", color: "#999999" }}
 >
-<i className="fa fa-envelope-o fa-fw fa-2x" aria-hidden="true"></i>
-  CONTACT
+<div className = { window.location.pathname === "/contact" ? "header-bordermaker": null}>
+<i className="fa fa-envelope-o fa-fw fa-2x" aria-hidden="true"></i></div>
+  <p>CONTACT</p>
 </Link>
 </div>
 )}
