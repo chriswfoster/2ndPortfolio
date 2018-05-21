@@ -5,7 +5,7 @@ class Projects extends Component {
     return (
       <div className="contact-main" style={{ backgroundColor: "#01b5b6" }}>
         <div className="contact-topbar font-righteous" style={{ borderBottom: "solid white" }}>
-          <p> PORTFOLIO. </p>
+          <p className="title-font"> PORTFOLIO. </p>
           <p> Some of my recent projects </p>
         </div>
         <div className="projecttilesflex">

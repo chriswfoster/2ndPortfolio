@@ -19,7 +19,7 @@ class Home extends Component {
     return (
       <div className="home-main">
         <div className="home-textcontainer font-righteous">
-          <p className="font-righteous"> Big words here.</p>
+          <p className="font-righteous title-font"> Big words here.</p>
           <p>
             Hi, my name is Chris Foster. I'm a Full Stack Web Developer with
             React, Redux, Router, AngularJS, Node/Express, Socket.io,
