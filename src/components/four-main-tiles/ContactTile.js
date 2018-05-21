@@ -21,7 +21,7 @@ class ContactTile extends Component {
         onClick={() => this.props.insertHandler("bottomrightinsert")}
       >
         <div className="App-innertile">
-          <p>Contact</p>
+          <p>CONTRACT</p>
         </div>
       </div>
     )

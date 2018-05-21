@@ -21,7 +21,7 @@ class ProjectsTile extends Component {
         onClick={() => this.props.insertHandler("toprightinsert")}
       >
         <div className="App-innertile">
-          <p>Projects</p>
+          <p>PROJECTS</p>
         </div>
       </div>
     )

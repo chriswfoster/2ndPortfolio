@@ -20,7 +20,7 @@ class AboutmeTile extends Component {
         onClick={() => this.props.insertHandler("topleftinsert")}
       >
         <div className="App-innertile">
-          <p>About Me</p>
+          <p>ABOUT ME</p>
         </div>
       </div>
     )

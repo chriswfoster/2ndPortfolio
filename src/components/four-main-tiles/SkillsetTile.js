@@ -21,7 +21,7 @@ class SkillsetTile extends Component {
         onClick={() => this.props.insertHandler("bottomleftinsert")}
       >
         <div className="App-innertile">
-          <p>Skillset</p>
+          <p>SKILLSET</p>
         </div>
       </div>
     )

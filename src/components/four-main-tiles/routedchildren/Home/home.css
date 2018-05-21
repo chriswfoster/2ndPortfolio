@@ -1,8 +1,12 @@
 .home-main {
   background-color: #01b5b6;
+  position: absolute;
+  z-index: 4;
   color: white;
-  width: 50vw;
-  height: 70vh;
+  width: 80vw;
+  height: 80vh;
+  left: 0vh;
+  top: 0vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -11,12 +15,12 @@
   align-content: stretch;
 }
 
-.home-textcontainer{
-    margin-left: 3vw;
+.home-textcontainer {
+  margin-left: 3vw;
 }
 
 .home-main img {
-    max-width: 40%;
-    margin-right: 3vw;
-    border: white 1vh solid;
+  max-width: 40%;
+  margin-right: 3vw;
+  border: white 1vh solid;
 }
