@@ -1,4 +1,40 @@
-.App-mainbackground {
+.App-aboutme{
+ background-image: url('./images/sondors-white.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.App-projects {
+  background-image: url('./images/projects.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.App-skillset {
+  background-image: url('./images/gearsinhead.gif');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.App-contact {
+  background-image: url('./images/mail-icon.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.App-tilesize{
+  width: 40vw;
+  height: 40vh;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------ OLD STUFF BELO --------------------------------------------- */
+/* .App-mainbackground {
   background-color: #545454;
   padding-top: 5vh;
 }
@@ -90,4 +126,4 @@ margin-left: -.5vw;
 }
 Link p {
 align-content: center;
-}
+} */

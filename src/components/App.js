@@ -56,14 +56,20 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App-mainbackground font-righteous">
-        <div className="App-maincontainer">
-          <Header />
-          <div className="App-bottomboxes">
-            <LeftBar />
+      <div>
+        <div className="App-aboutme App-tilesize"> About Me </div>
+        <div className="App-projects App-tilesize"> Projects </div>
+        <div className="App-skillset App-tilesize"> Skillset </div>
+        <div className="App-contact App-tilesize"> Contact </div>
+      </div>
+    )
+  }
+}
 
-            <div>
-              <AnimatedSwitch
+export default App
+
+{
+  /* <AnimatedSwitch
                 atEnter={this.bounceTransition.atEnter}
                 atLeave={this.bounceTransition.atLeave}
                 atActive={this.bounceTransition.atActive}
@@ -74,13 +80,5 @@ class App extends Component {
                 <Route path="/projects" render={() => <Projects />} />
                 <Route path="/skillset" render={() => <Skillset />} />
                 <Route path="/" render={() => <Home />} />
-              </AnimatedSwitch>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
+              </AnimatedSwitch> */
 }
-
-export default App
