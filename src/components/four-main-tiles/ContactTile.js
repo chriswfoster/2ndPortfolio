@@ -1,8 +1,11 @@
 import React, { Component } from "react"
+import Contact from "./routedchildren/Contact/Contact"
 
 class ContactTile extends Component {
   render() {
-    return (
+    return this.props.insert ? (
+      <Contact />
+    ) : (
       <div
         className="App-contact App-tilesize "
         style={this.props.expand(
@@ -15,6 +18,7 @@ class ContactTile extends Component {
           this.props.size("bottomright", "bottomleft", "topright", "topleft")
         }
         onMouseLeave={() => this.props.leave()}
+        onClick={() => this.props.insertHandler("bottomrightinsert")}
       >
         <div className="App-innertile">
           <p>Contact</p>

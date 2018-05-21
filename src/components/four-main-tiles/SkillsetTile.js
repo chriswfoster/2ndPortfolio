@@ -1,8 +1,11 @@
 import React, { Component } from "react"
+import Skillset from "./routedchildren/Skillset/Skillset"
 
 class SkillsetTile extends Component {
   render() {
-    return (
+    return this.props.insert ? (
+      <Skillset />
+    ) : (
       <div
         className="App-skillset App-tilesize "
         style={this.props.expand(
@@ -15,6 +18,7 @@ class SkillsetTile extends Component {
           this.props.size("bottomleft", "bottomright", "topleft", "topright")
         }
         onMouseLeave={() => this.props.leave()}
+        onClick={() => this.props.insertHandler("bottomleftinsert")}
       >
         <div className="App-innertile">
           <p>Skillset</p>
