@@ -56,7 +56,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="App-main">
         <div className="App-aboutme App-tilesize"> About Me </div>
         <div className="App-projects App-tilesize"> Projects </div>
         <div className="App-skillset App-tilesize"> Skillset </div>
