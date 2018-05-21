@@ -6,7 +6,7 @@ class LeftBar extends Component {
 render() {
 return(
 <div className="App-leftbar">
-<p> CHRIS FOSTER </p>
+<p className="title-font"> CHRIS FOSTER </p>
 <ul>
   <li>full-stack web developer</li>
   <li>e-bike and avid car enthusiast</li>

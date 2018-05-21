@@ -57,6 +57,10 @@
   font-family: "Righteous", sans-serif;
   letter-spacing: 1px;
 }
+.title-font{
+font-size: 2rem;
+}
+
  ul {
   list-style-type: none;
  }

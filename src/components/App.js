@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import router from "../router"
-import Header from './Header'
-import LeftBar from './LeftBar'
+import Header from "./Header"
+import LeftBar from "./LeftBar"
 import Contact from "./routedchildren/Contact/Contact"
 import Projects from "./routedchildren/Projects/Projects"
 import Skillset from "./routedchildren/Skillset/Skillset"
