@@ -5,8 +5,11 @@ import "./skillset.css"
 class Skillset extends Component {
   render() {
     return (
-      <div className="skillset-main" style={{ backgroundColor: "#01b5b6" }}>
-        <div className="contact-topbar font-righteous" style={{ borderBottom: "solid white" }}>
+      <div className="skillset-main" style={{ backgroundColor: "white" }}>
+        <div
+          className="contact-topbar font-righteous"
+          style={{ borderBottom: "solid white" }}
+        >
           <p className="title-font">SKILLSET</p>
           <p>Some of the skills and tech that I have knowledge in.</p>
         </div>
@@ -91,7 +94,10 @@ class Skillset extends Component {
           </div>
         </div>
 
-        <p className="skillset-including">
+        <p
+          className="skillset-including font-righteous"
+          style={{ color: "black", marginBottom: "5vh" }}
+        >
           I also have profiency in Linux/Unix, Mac, and MS Windows Operating
           Systems (Server distributions as well). I have a background in IT with
           some system adminstration experience. You're absolute free to{" "}
