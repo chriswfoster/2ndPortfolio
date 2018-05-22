@@ -12,8 +12,8 @@
   background-repeat: no-repeat;
   animation: aboutme-in 750ms ease-in-out;
   position: absolute;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid blue;
   border-radius: 0 0 12px 0;
   top: 0vh;
   left: 0vh;
@@ -26,8 +26,8 @@
   animation: projects-in 750ms ease-in-out;
   top: 0vh;
   right: 0vh;
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
+  border-left: 2px solid blue;
+  border-bottom: 2px solid blue;
   border-radius: 0 0 0 12px;
 }
 
@@ -39,21 +39,21 @@
   background-position-y: 0%;
   position: absolute;
   animation: skillset-in 750ms ease-in-out;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
+  border-right: 2px solid blue;
+  border-top: 2px solid blue;
   border-radius: 0 12px 0 0;
   bottom: 0px;
   left: 0px;
 }
 .App-contact {
-  background-image: url("./images/mail-icon.png");
+  background-image: url("./images/3-2-blue-email.png");
   background-size: 80% 80%;
   background-position-x: 50%;
   background-position-y: 50%;
   background-repeat: no-repeat;
   animation: contact-in 750ms ease-in-out;
-  border-left: 2px solid white;
-  border-top: 2px solid white;
+  border-left: 2px solid blue;
+  border-top: 2px solid blue;
   border-radius: 12px 0 0 0;
   bottom: 0vh;
   right: 0vh;
