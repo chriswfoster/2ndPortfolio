@@ -137,7 +137,9 @@ class App extends Component {
         this.state.toprightinsert ||
         this.state.bottomleftinsert ||
         this.state.bottomrightinsert ? (
-          <div className="boxCloser" onClick={() => this.closeHandler()} />
+          <div className="boxCloser" onClick={() => this.closeHandler()}>
+            <p className="font-righteous">{"◄ BACK"}</p>
+          </div>
         ) : null}
       </div>
     )

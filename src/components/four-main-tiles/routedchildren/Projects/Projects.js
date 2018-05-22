@@ -3,8 +3,11 @@ import "./projects.css"
 class Projects extends Component {
   render() {
     return (
-      <div className="contact-main" style={{ backgroundColor: "#01b5b6" }}>
-        <div className="contact-topbar font-righteous" style={{ borderBottom: "solid white" }}>
+      <div className="projects-main" style={{ backgroundColor: "white" }}>
+        <div
+          className="contact-topbar font-righteous"
+          style={{ borderBottom: "solid white" }}
+        >
           <p className="title-font"> PORTFOLIO. </p>
           <p> Some of my recent projects </p>
         </div>
@@ -48,6 +51,19 @@ class Projects extends Component {
               alt="imgz"
             />
           </a>
+          <div
+            onClick={() => alert("No video for this project yet")}
+            style={{ textDecoration: "none" }}
+            className="projectlinks"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={require("./robotproject.jpg")}
+              className="projectpictiles"
+              alt="imgz"
+            />
+          </div>
         </div>
       </div>
     )

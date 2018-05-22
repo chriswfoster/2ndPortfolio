@@ -1,8 +1,9 @@
 .projectpictiles {
   width: 100%;
-  height: 25vh;
+  height: 40vh;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0);
+  border-radius: 12px;
 }
 .projectpictiles:hover {
   border-style: solid;
@@ -22,7 +23,47 @@
 .projectlinks {
   width: 49%;
   color: white;
+  height: 25%;
 }
 .projectlinks:hover {
   color: white;
+}
+
+.projects-main {
+  width: 85vw;
+  height: 85vh;
+  background-color: white;
+  animation: projects-center 750ms ease-in-out;
+  right: 7.5vw;
+  top: 7.5vh;
+  position: absolute;
+  border-radius: 12px;
+  opacity: 1;
+  z-index: 4;
+  overflow-y: auto;
+}
+
+@keyframes projects-center {
+  0% {
+    right: 0vw;
+    top: 0vh;
+    border-radius: 0px 0px 0px 12px;
+  }
+  100% {
+    right: 7.5vw;
+    top: 7.5vh;
+    border-radius: 12px;
+  }
+}
+@-webkit-keyframes projects-center {
+  0% {
+    right: 0vw;
+    top: 0vh;
+    border-radius: 0px 0px 0px 12px;
+  }
+  100% {
+    right: 7.5vw;
+    top: 7.5vh;
+    border-radius: 12px;
+  }
 }
