@@ -1,19 +1,9 @@
 import React, { Component } from "react"
-import router from "../router"
 
 import AboutmeTile from "./four-main-tiles/AboutmeTile"
 import ContactTile from "./four-main-tiles/ContactTile"
 import ProjectsTile from "./four-main-tiles/ProjectsTile"
 import SkillsetTile from "./four-main-tiles/SkillsetTile"
-
-import { AnimatedSwitch, spring } from "react-router-transition"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect
-} from "react-router-dom"
 
 import "./App.css"
 import "./font-awesome/css/font-awesome.min.css"
