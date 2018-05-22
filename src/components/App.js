@@ -69,13 +69,10 @@ class App extends Component {
     this.setState({ [tile]: true })
   }
 
-  backgroundColor() {
+  backgroundColor = () => {
     let red = this.state.ypos / window.innerHeight * 65
     let blue = this.state.xpos / window.innerWidth * 255 + 75
-    console.log(`rgb(${red}, ${40 / 43 * red + 858 / 43} ,${blue})`)
-    return {
-      backgroundColor: `rgb(${red}, ${40 / 43 * red + 858 / 43 - 20} ,${blue})`
-    }
+    return `rgb(${red}, ${40 / 43 * red + 858 / 43 - 20} ,${blue})`
   }
 
   mouseTracker(e) {
@@ -86,7 +83,10 @@ class App extends Component {
     window.onmousemove = e => this.mouseTracker(e)
 
     return (
-      <div className="App-main" style={this.backgroundColor()}>
+      <div
+        className="App-main"
+        style={{ backgroundColor: `${this.backgroundColor()}`}}
+      >
         <AboutmeTile
           expand={this.expand}
           leave={this.leave}
