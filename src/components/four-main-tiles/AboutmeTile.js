@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Aboutme from "./routedchildren/Home/Home"
+import Aboutme from "./routedchildren/AboutMe/AboutMe"
 class AboutmeTile extends Component {
   render() {
     return this.props.insert ? (

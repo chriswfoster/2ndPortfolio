@@ -1,0 +1,55 @@
+.home-main {
+  background-color: #01b5b6;
+  position: absolute;
+  z-index: 4;
+  color: white;
+  width: 85vw;
+  height: 85vh;
+  left: 0vh;
+  top: 0vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  animation: aboutme-center 750ms ease-in-out;
+}
+
+.home-textcontainer {
+  margin-left: 3vw;
+}
+
+.home-main img {
+  max-width: 40%;
+  margin-right: 3vw;
+  border: white 1vh solid;
+}
+
+@keyframes aboutme-center {
+  0% {
+    left: -47vw;
+    top: -47vh;
+    border-radius: 555px;
+  }
+  80% {
+    border-radius: 0 0 0px 0;
+    width: 55vw;
+    height: 55vh;
+  }
+  100% {
+    border-radius: 12px;
+    width: 45vw;
+    height: 45vh;
+  }
+}
+@-webkit-keyframes aboutme-center {
+  0% {
+    left: 0vw;
+    top: 0vh;
+  }
+  100% {
+    left: 7.5vw;
+    top: 7.5vh;
+  }
+}
