@@ -1,20 +1,23 @@
 .home-main {
-  background-color: #01b5b6;
+  background-color: white;
   position: absolute;
   z-index: 4;
-  color: white;
+  color: black;
   width: 85vw;
   height: 85vh;
   left: 7.5vw;
   top: 7.5vh;
+  animation: aboutme-center 750ms ease-in-out;
+  border-radius: 12px;
+}
+.aboutme-flex {
+  margin-top: 3vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   align-content: stretch;
-  animation: aboutme-center 750ms ease-in-out;
-  border-radius: 12px;
 }
 
 .home-textcontainer {
@@ -24,9 +27,13 @@
 .home-main img {
   max-width: 40%;
   margin-right: 3vw;
-  border: white 1vh solid;
+  border: blue 0.5vh solid;
 }
 
+ul {
+  margin-bottom: 5vw;
+  list-style: none;
+}
 @keyframes aboutme-center {
   0% {
     left: 0vw;

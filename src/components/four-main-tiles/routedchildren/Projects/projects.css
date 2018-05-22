@@ -4,10 +4,11 @@
   border-style: solid;
   border-color: rgba(255, 255, 255, 0);
   border-radius: 12px;
+  border-width: 4px;
 }
 .projectpictiles:hover {
   border-style: solid;
-  border-color: white;
+  border-color: rgb(0, 0, 204);
 }
 .projecttilesflex {
   display: flex;
@@ -26,7 +27,7 @@
   height: 25%;
 }
 .projectlinks:hover {
-  color: white;
+  color: blue;
 }
 
 .projects-main {

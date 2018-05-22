@@ -8,7 +8,7 @@ class Projects extends Component {
           className="contact-topbar font-righteous"
           style={{ borderBottom: "solid white" }}
         >
-          <p className="title-font"> PORTFOLIO. </p>
+          <p className="title-font"> PORTFOLIO </p>
           <p> Some of my recent projects </p>
         </div>
         <div className="projecttilesflex">
