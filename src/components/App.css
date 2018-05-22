@@ -65,7 +65,9 @@
   height: 45vh;
   background-color: black;
   transition: 750ms all ease-in-out;
+  cursor: pointer;
 }
+
 .App-innertile {
   align-content: center;
   width: 100%;
@@ -86,6 +88,9 @@
 .App-innertile:hover {
   position: relative;
   background-color: rgba(0, 0, 0, 0.692);
+}
+.App-innertile p:hover {
+  text-decoration: underline;
 }
 
 .App-firstname {
