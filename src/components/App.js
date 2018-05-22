@@ -79,13 +79,22 @@ class App extends Component {
     this.setState({ xpos: e.clientX, ypos: e.clientY })
   }
 
+  closeHandler() {
+    this.setState({
+      topleftinsert: false,
+      toprightinsert: false,
+      bottomleftinsert: false,
+      bottomrightinsert: false
+    })
+  }
+
   render() {
     window.onmousemove = e => this.mouseTracker(e)
 
     return (
       <div
         className="App-main"
-        style={{ backgroundColor: `${this.backgroundColor()}`}}
+        style={{ backgroundColor: `${this.backgroundColor()}` }}
       >
         <AboutmeTile
           expand={this.expand}
@@ -124,6 +133,12 @@ class App extends Component {
         <p className="App-webdeveloper font-righteous App-vertialtext">
           WEB DEVELOPER
         </p>
+        {this.state.topleftinsert ||
+        this.state.toprightinsert ||
+        this.state.bottomleftinsert ||
+        this.state.bottomrightinsert ? (
+          <div className="boxCloser" onClick={() => this.closeHandler()} />
+        ) : null}
       </div>
     )
   }

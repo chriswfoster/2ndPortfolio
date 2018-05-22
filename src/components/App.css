@@ -12,8 +12,8 @@
   background-repeat: no-repeat;
   animation: aboutme-in 750ms ease-in-out;
   position: absolute;
-  border-right: 2px solid blue;
-  border-bottom: 2px solid blue;
+  border-right: 2px solid rgb(0, 0, 204);
+  border-bottom: 2px solid rgb(0, 0, 204);
   border-radius: 0 0 12px 0;
   top: 0vh;
   left: 0vh;
@@ -26,8 +26,8 @@
   animation: projects-in 750ms ease-in-out;
   top: 0vh;
   right: 0vh;
-  border-left: 2px solid blue;
-  border-bottom: 2px solid blue;
+  border-left: 2px solid rgb(0, 0, 204);
+  border-bottom: 2px solid rgb(0, 0, 204);
   border-radius: 0 0 0 12px;
 }
 
@@ -39,8 +39,8 @@
   background-position-y: 0%;
   position: absolute;
   animation: skillset-in 750ms ease-in-out;
-  border-right: 2px solid blue;
-  border-top: 2px solid blue;
+  border-right: 2px solid rgb(0, 0, 204);
+  border-top: 2px solid rgb(0, 0, 204);
   border-radius: 0 12px 0 0;
   bottom: 0px;
   left: 0px;
@@ -52,8 +52,8 @@
   background-position-y: 50%;
   background-repeat: no-repeat;
   animation: contact-in 750ms ease-in-out;
-  border-left: 2px solid blue;
-  border-top: 2px solid blue;
+  border-left: 2px solid rgb(0, 0, 204);
+  border-top: 2px solid rgb(0, 0, 204);
   border-radius: 12px 0 0 0;
   bottom: 0vh;
   right: 0vh;
@@ -122,11 +122,15 @@
   word-wrap: break-word;
 }
 
+.title-font {
+  font-size: 2rem;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Righteous");
 
 .font-righteous {
   font-family: "Righteous", sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: white;
 }
 
@@ -284,6 +288,16 @@
     width: 45vw;
     height: 45vh;
   }
+}
+
+.boxCloser {
+  background-color: rgba(0, 0, 0, 0.725);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  z-index: 3;
 }
 
 /* ------------------------------------ OLD STUFF BELO --------------------------------------------- */

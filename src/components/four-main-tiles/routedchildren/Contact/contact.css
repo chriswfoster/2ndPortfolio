@@ -1,5 +1,5 @@
 .contact-topbar {
-  background-color: #01b5b6;
+  background-color: rgb(0, 0, 204);
   height: 8vh;
 
   display: flex;
@@ -11,11 +11,18 @@
 }
 
 .contact-main {
-  width: 50vw;
-  height: 70vh;
+  width: 85vw;
+  height: 85vh;
   background-color: white;
   overflow-x: scroll;
-
+  animation: contact-center 750ms ease-in-out;
+  right: 7.5vw;
+  bottom: 7.5vh;
+  position: absolute;
+  border-radius: 12px;
+  opacity: 1;
+  z-index: 4;
+  overflow: hidden;
 }
 
 .contact-inputorganization {
@@ -35,22 +42,22 @@
   border-radius: 20px;
   border-width: 3px;
   border-style: solid;
-  border-color: rgb(189, 189, 189);
+  border-color: #949494;
   font-size: 1.5rem;
   padding-left: 1vw;
 }
 
 .contact-inputorganization input::placeholder {
-  color: rgb(189, 189, 189);
+  color: #949494;
 }
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgb(189, 189, 189);
+  color: #949494;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: rgb(189, 189, 189);
+  color: #949494;
 }
 
 .contact-textarea {
@@ -59,7 +66,7 @@
   border-radius: 20px;
   border-width: 3px;
   border-style: solid;
-  border-color: rgb(189, 189, 189);
+  border-color: #949494;
   font-size: 1.5rem;
   padding-left: 1vw;
   margin-top: 2vh;
@@ -67,21 +74,21 @@
 }
 
 .contact-textarea::placeholder {
-  color: rgb(189, 189, 189);
+  color: #949494;
 }
 :-ms-textarea-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgb(189, 189, 189);
+  color: #949494;
 }
 
 ::-ms-textarea-placeholder {
   /* Microsoft Edge */
-  color: rgb(189, 189, 189);
+  color: #949494;
 }
 
 .contact-FormFlex {
-  margin-top: 0px;
-  width: 50vw;
+  margin-top: 5vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -95,13 +102,14 @@
   margin-top: 2vh;
   border-width: 3px;
   border-style: solid;
-  border-color: #01b5b6;
+  border-color: rgb(0, 0, 204);
   border-radius: 20px;
   height: 5vh;
   font-size: 1rem;
+  cursor: pointer;
 }
 
-.contact-iconFlex{
+.contact-iconFlex {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -125,4 +133,30 @@
 }
 .fa-github {
   height: 60px;
+}
+
+@keyframes contact-center {
+  0% {
+    right: 0vw;
+    bottom: 0vh;
+    border-radius: 0px 0px 12px 0px;
+  }
+  100% {
+    right: 7.5vw;
+    bottom: 7.5vh;
+    border-radius: 12px;
+  }
+}
+@-webkit-keyframes contact-center {
+  0% {
+    right: 0vw;
+    bottom: 0vh;
+    border-radius: 0px 0px 12px 0px;
+  }
+  100% {
+    right: 7.5vw;
+    bottom: 7.5vh;
+    border-radius: 12px;
+    opacity: 1;
+  }
 }

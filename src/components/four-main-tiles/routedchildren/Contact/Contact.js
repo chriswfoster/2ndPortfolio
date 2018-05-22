@@ -23,39 +23,12 @@ class Contact extends Component {
       ))
     )
     return (
-      <div className="contact-main">
+      <div className="contact-main" style={{ opacity: "1" }}>
         <div className="contact-topbar font-righteous ">
           <p className="title-font"> CONTACT </p>
           <p> Wanna talk to me? </p>
         </div>
-        <MyMapComponent
-          isMarkerShown
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={
-            <div
-              style={{
-                height: `30vh`,
-                width: `50vw`
-              }}
-            />
-          }
-          containerElement={
-            <div
-              style={{
-                height: `30vh`,
-                width: `50vw`
-              }}
-            />
-          }
-          mapElement={
-            <div
-              style={{
-                height: `30vh`,
-                width: `50vw`
-              }}
-            />
-          }
-        />
+
         <ContactForm />
 
         <div className="contact-iconFlex">
