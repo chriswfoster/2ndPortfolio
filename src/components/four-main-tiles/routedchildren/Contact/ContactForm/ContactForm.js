@@ -16,7 +16,7 @@ class ContactForm extends Component {
 
   captchaHandler = value => {
     console.log("Captcha value:", value)
-    value != undefined
+    value !== undefined
       ? this.setState({ submitStatus: "" })
       : alert("Captcha failed.")
   }
