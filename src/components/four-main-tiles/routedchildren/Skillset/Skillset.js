@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Link } from "react-router-dom"
 import "./skillset.css"
 
 class Skillset extends Component {
@@ -100,8 +99,7 @@ class Skillset extends Component {
         >
           I also have profiency in Linux/Unix, Mac, and MS Windows Operating
           Systems (Server distributions as well). I have a background in IT with
-          some system adminstration experience. You're absolute free to{" "}
-          <Link to="/contact">reach out to me for more details!</Link>
+          some system adminstration experience. You're absolute free to reach out to me for more details!
         </p>
       </div>
     )

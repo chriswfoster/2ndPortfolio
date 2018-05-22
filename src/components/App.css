@@ -98,6 +98,7 @@
   top: 37vh;
   left: 15vw;
   font-size: 8vh;
+  z-index: 0;
 }
 .App-lastname {
   position: absolute;

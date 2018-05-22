@@ -50,7 +50,7 @@ class App extends Component {
     ) {
       return { width: "30vw", height: "30vh", opacity: "0.3", zIndex: "2" }
     }
-    return { width: "45vw", height: "45vh" }
+    return { width: "45vw", height: "45vh", zIndex: "2" }
   }
   size = (first, second, third, fourth) => {
     this.setState({
