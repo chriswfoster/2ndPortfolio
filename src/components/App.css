@@ -12,8 +12,8 @@
   background-repeat: no-repeat;
   animation: aboutme-in 750ms ease-in-out;
   position: absolute;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
   border-radius: 0 0 12px 0;
   top: 0vh;
   left: 0vh;
@@ -26,19 +26,21 @@
   animation: projects-in 750ms ease-in-out;
   top: 0vh;
   right: 0vh;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
   border-radius: 0 0 0 12px;
 }
 
 .App-skillset {
-  background-image: url("./images/gearsinhead.gif");
-  background-size: 100% 100%;
+  background-image: url("./images/head-gears.gif");
+  background-size: 50% 100%;
   background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 0%;
   position: absolute;
   animation: skillset-in 750ms ease-in-out;
-  border-right: 2px solid black;
-  border-top: 2px solid black;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
   border-radius: 0 12px 0 0;
   bottom: 0px;
   left: 0px;
@@ -50,8 +52,8 @@
   background-position-y: 50%;
   background-repeat: no-repeat;
   animation: contact-in 750ms ease-in-out;
-  border-left: 2px solid black;
-  border-top: 2px solid black;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
   border-radius: 12px 0 0 0;
   bottom: 0vh;
   right: 0vh;
@@ -61,7 +63,7 @@
 .App-tilesize {
   width: 45vw;
   height: 45vh;
-  background-color: white;
+  background-color: black;
   transition: 750ms all ease-in-out;
 }
 .App-innertile {
