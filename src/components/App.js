@@ -29,7 +29,9 @@ class App extends Component {
       topleftinsert: false,
       toprightinsert: false,
       bottomleftinsert: false,
-      bottomrightinsert: false
+      bottomrightinsert: false,
+      xpos: 0,
+      ypos: 0
     }
   }
 
@@ -67,9 +69,24 @@ class App extends Component {
     this.setState({ [tile]: true })
   }
 
+  backgroundColor() {
+    let red = this.state.ypos / window.innerHeight * 65
+    let blue = this.state.xpos / window.innerWidth * 255 + 75
+    console.log(`rgb(${red}, ${40 / 43 * red + 858 / 43} ,${blue})`)
+    return {
+      backgroundColor: `rgb(${red}, ${40 / 43 * red + 858 / 43 - 20} ,${blue})`
+    }
+  }
+
+  mouseTracker(e) {
+    this.setState({ xpos: e.clientX, ypos: e.clientY })
+  }
+
   render() {
+    window.onmousemove = e => this.mouseTracker(e)
+
     return (
-      <div className="App-main">
+      <div className="App-main" style={this.backgroundColor()}>
         <AboutmeTile
           expand={this.expand}
           leave={this.leave}
