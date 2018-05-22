@@ -35,6 +35,12 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+    alert(
+      "Hi, thanks for visiting! A lot of the site is under construction right now. I'm still adding stuff every day. Thanks!"
+    )
+  }
+
   leave = () => {
     this.setState({
       topleft: null,
