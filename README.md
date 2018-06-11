@@ -1,3 +1,4 @@
 <html>
-<img src='./screenshot.png'>
+<img src='./'>
+<img src='./readmefiles/screenshot.png'>
 </html>
