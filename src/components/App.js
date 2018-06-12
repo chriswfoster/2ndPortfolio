@@ -30,6 +30,7 @@ class App extends Component {
       "Hi, thanks for visiting! The site is still under construction, but near it's completion."
     )
   }
+  
 
   leave = () => {
     this.setState({
