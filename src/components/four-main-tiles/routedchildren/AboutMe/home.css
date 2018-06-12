@@ -23,6 +23,9 @@
 .home-textcontainer {
   margin-left: 3vw;
 }
+.home-textcontainer p {
+  width: 90%;
+}
 
 .home-main img {
   max-width: 40%;
