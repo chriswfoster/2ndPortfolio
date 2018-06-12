@@ -40,7 +40,7 @@ class Home extends Component {
           </div>
           <div className="home-main-img-flex">
             <img src={require("./rsz_linkedin.jpg")} alt="linkedinpic" />
-            <img src={require("./ebike7.jpg")} alt="bikepic" />
+            <img src={require("./ebike8.jpg")} alt="bikepic" />
           </div>
         </div>
       </div>

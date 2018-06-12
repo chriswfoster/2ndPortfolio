@@ -27,7 +27,7 @@ class App extends Component {
 
   componentDidMount() {
     alert(
-      "Hi, thanks for visiting! A lot of the site is under construction right now. I'm still adding stuff every day. Thanks!"
+      "Hi, thanks for visiting! The site is still under construction, but near it's completion."
     )
   }
 
@@ -66,9 +66,9 @@ class App extends Component {
   }
 
   backgroundColor = () => {
-    let red = this.state.ypos / window.innerHeight * 65
-    let blue = this.state.xpos / window.innerWidth * 255 + 75
-    return `rgb(${red}, ${40 / 43 * red + 858 / 43 - 20} ,${blue})`
+    let red = (this.state.ypos / window.innerHeight) * 65
+    let blue = (this.state.xpos / window.innerWidth) * 255 + 75
+    return `rgb(${red}, ${(40 / 43) * red + 858 / 43 - 20} ,${blue})`
   }
 
   mouseTracker(e) {
