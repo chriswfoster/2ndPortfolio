@@ -38,7 +38,10 @@ class Home extends Component {
               an IT background into the exciting world of Web Development!
             </p>
           </div>
-          <img src={require("./rsz_linkedin.jpg")} alt="linkedinpic" />
+          <div className="home-main-img-flex">
+            <img src={require("./rsz_linkedin.jpg")} alt="linkedinpic" />
+            <img src={require("./ebike7.jpg")} alt="bikepic" />
+          </div>
         </div>
       </div>
     )

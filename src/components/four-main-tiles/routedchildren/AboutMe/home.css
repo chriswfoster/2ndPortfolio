@@ -27,9 +27,23 @@
   width: 90%;
 }
 
-.home-main img {
-  max-width: 40%;
+.home-main-img-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  overflow-x: auto;
+  height: 65vh;
+  padding-left: 1vw;
+}
+
+.home-main-img-flex img {
+  width: 95%;
+  margin-left: 1vw;
   margin-right: 3vw;
+  margin-bottom: 3vw;
   border: blue 0.5vh solid;
 }
 
