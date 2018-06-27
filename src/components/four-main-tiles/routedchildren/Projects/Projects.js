@@ -59,7 +59,7 @@ class Projects extends Component {
             rel="noopener noreferrer"
           >
             <img
-              src={require("./robotproject.jpg")}
+              src={require("./robotprojectsmaller.jpg")}
               className="projectpictiles"
               alt="imgz"
             />
