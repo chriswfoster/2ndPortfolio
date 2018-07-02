@@ -26,6 +26,20 @@ class Projects extends Component {
             />
           </a>
           <a
+            href="http://rtello.chriswf.com"
+            style={{ textDecoration: "none" }}
+            className="projectlinks"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={require("./trello.gif")}
+              className="projectpictiles"
+              alt="imgz"
+            />
+          </a>
+
+          <a
             href="http://dream.chriswf.com"
             style={{ textDecoration: "none" }}
             className="projectlinks"
